@@ -1,0 +1,16 @@
+{
+  "base": {
+    "project": "olga project",
+    "environment": "PROD",
+    "comment": "link to pull request",
+    "reportLink": "",
+    "language": "en",
+    "allureFolder": "test/ allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "5461555374:AAHffOwSU2UlfCFflPomYGDJDjOiLGHk8jA",
+    "chat": "-1001606220242",
+    "replyTo": ""
+  }
+}
