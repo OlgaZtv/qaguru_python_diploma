@@ -84,18 +84,22 @@ pytest ${TESTS_FOLDER} --browser_version=${BROWSER_VERSION}
 
 ### Запуск в Jenkins
 Статистика по запускам <br >
-<a href="https://ibb.co/TvwPjzj"><img src="https://i.ibb.co/2nFcVXV/jenkins-stst.png" alt="Статистика по запускам" border="0"></a>
+<img src="resources/jenkins stat.png" alt="Статистика по запускам" border="0">
 
-Параметры запуска <br >
-<a href="https://ibb.co/THr4VDp"><img src="https://i.ibb.co/nDR7HqZ/Jenkins.png" alt="Jenkins" border="0"></a>
+### Параметры запуска <br >
+<img src="resources/jenkins_params.png" alt="Jenkins" border="0">
 
 ### Отчёт о прохождении автотестов в Allure Report
-<img src="https://i.ibb.co/SVqqBMh/Allure-Report.png" alt="Allure-Report" border="0">
+<img src="resources/allure2.png" alt="Allure-Report" border="0">
+
 ### Список автотестов в Allure Report
 <img src="resources/allure_list.png" alt="Allure-Report-2" border="0">
+
 ### Хранение тестовой документации в Allure TestOps
 <img src="https://i.ibb.co/pbj1zVw/Allure-Test-Ops.png" alt="Allure-Test-Ops" border="0">
+
 ### Интерграция с Jira
 <img src="https://i.ibb.co/JQ69XYt/HOMEWORK-320-Olga-Ztv-final-project-tests-QA-GURU-Jira.png" alt="HOMEWORK-320-Olga-Ztv-final-project-tests-QA-GURU-Jira" border="0">
+
 ### Уведомления о прохождении автотестов в Telegram
-<img src="https://i.ibb.co/G2fGQj5/telegram-bot.png" alt="telegram-bot" border="0">
+<img src="resources/telegram1.png" alt="telegram-bot" border="0">
