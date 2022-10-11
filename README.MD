@@ -76,7 +76,7 @@ pytest .
 ls -la
 python -m venv .venv
 source .venv/bin/activate
-pytest ${TESTS_FOLDER} --browser_version=${BROWSER_VERSION}
+pytest ${TESTS_FOLDER}
 ```
 
 ### Видео о прохождении тестов
