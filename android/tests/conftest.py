@@ -26,7 +26,7 @@ def driver_management(request):
     yield
 
     # given we want to save disk space
-    # then we store screenshots and xml dumps only for failed tests
+    # then we store screenshots and xml dumps only for failed tests_zero_bank
     if config.settings.run_on_browserstack and request.node.result_of_call.failed:
         '''
         request.node is an "item" because we use the default "function" scope

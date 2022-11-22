@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from dotenv import load_dotenv
 
-from utils import ui_attach
+from ui.helpers import attach
 
 
 @pytest.fixture(scope='function', autouse=True)
