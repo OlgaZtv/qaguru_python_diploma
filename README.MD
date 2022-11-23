@@ -95,11 +95,11 @@ pytest ${TESTS_FOLDER}
 ### Список автотестов в Allure Report
 <img src="resources/allure_list.png" alt="Allure-Report-2" border="0">
 
-### Хранение тестовой документации в Allure TestOps
-<img src="https://i.ibb.co/pbj1zVw/Allure-Test-Ops.png" alt="Allure-Test-Ops" border="0">
+### Список автотестов в Allure TestOps
+<img src="resources/allure-testOPS-1.png" alt="Allure-Report-2" border="0">
 
-### Интерграция с Jira
-<img src="https://i.ibb.co/JQ69XYt/HOMEWORK-320-Olga-Ztv-final-project-tests-QA-GURU-Jira.png" alt="HOMEWORK-320-Olga-Ztv-final-project-tests-QA-GURU-Jira" border="0">
+### Хранение тестовой документации в Allure TestOps
+<img src="resources/allureTestOPS-testcase.png" alt="Allure-Test-Ops" border="0">
 
 ### Уведомления о прохождении автотестов в Telegram
 <img src="resources/telegram1.png" alt="telegram-bot" border="0">
