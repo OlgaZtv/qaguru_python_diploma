@@ -15,7 +15,7 @@ def test_login():
     headers = {'content-type': 'application/json'}
 
     # WHEN
-    response = altoro.post('/login', headers=headers, json=payload)
+    response = altoro().post('/login', headers=headers, json=payload)
 
     # THEN
     assert response.status_code == SUCCESSFUL, f'Status code should be {SUCCESSFUL}'
@@ -32,12 +32,12 @@ def test_transfer():
     headers_login = {'content-type': 'application/json'}
 
     # WHEN
-    response_login = altoro.post('/login', headers=headers_login, json=payload)
+    response_login = altoro().post('/login', headers=headers_login, json=payload)
     text = response_login.text
     token: str = str(text[18:49])
     headers = {'content-type': 'application/json', 'Authorization': token}
     data = {"toAccount": "800002", "fromAccount": "800003", "transferAmount": "200"}
-    response = altoro.post('/transfer', headers=headers, json=data)
+    response = altoro().post('/transfer', headers=headers, json=data)
 
     # THEN
     assert response.status_code == SUCCESSFUL, f'Status code should be {SUCCESSFUL}'
@@ -53,7 +53,7 @@ def test_submit_and_review_feedback():
             "message": "I like the new look of your applicaiton"}
 
     # WHEN
-    response = altoro.post('/feedback/submit', json=body)
+    response = altoro().post('/feedback/submit', json=body)
 
     # THEN
     assert response.status_code == SUCCESSFUL, f'Status code should be {SUCCESSFUL}'
@@ -68,7 +68,7 @@ def test_add_user():
     payload = {"username": 'admin', 'password': "admin"}
 
     # WHEN
-    response_login = altoro.post('/login', json=payload)
+    response_login = altoro().post('/login', json=payload)
     text = response_login.text
     token: str = str(text[18:49])
     headers = {'content-type': 'application/json', 'Authorization': token}
@@ -77,7 +77,7 @@ def test_add_user():
             "username": "bilbob",
             "password1": "S3l3ctS0methingStr0ng5AsP@ssword",
             "password2": "S3l3ctS0methingStr0ng5AsP@ssword"}
-    response = altoro.post('/admin/addUser', headers=headers, json=data)
+    response = altoro().post('/admin/addUser', headers=headers, json=data)
 
     # THEN
     assert response.status_code == SUCCESSFUL, f'Status code should be {SUCCESSFUL}'
@@ -92,7 +92,7 @@ def test_change_user_password():
     payload = {"username": 'admin', 'password': "admin"}
 
     # WHEN
-    response_login = altoro.post('/login', json=payload)
+    response_login = altoro().post('/login', json=payload)
     text = response_login.text
     token: str = str(text[18:49])
     headers = {'content-type': 'application/json', 'Authorization': token}
@@ -101,7 +101,7 @@ def test_change_user_password():
         "password1": "Th1s!sz3nu3Passv0rd",
         "password2": "Th1s!sz3nu3Passv0rd"
     }
-    response = altoro.post('/admin/changePassword', headers=headers, json=data)
+    response = altoro().post('/admin/changePassword', headers=headers, json=data)
 
     # THEN
     assert response.status_code == SUCCESSFUL, f'Status code should be {SUCCESSFUL}'
@@ -113,7 +113,7 @@ def test_change_user_password():
 @allure.story('Log out test')
 def test_logout():
     # WHEN
-    response = altoro.get('/logout')
+    response = altoro().get('/logout')
 
     # THEN
     assert response.status_code == SUCCESSFUL, f'Status code should be {SUCCESSFUL}'
