@@ -10,7 +10,7 @@ from ui.model.pages.online_banking_page import OnlineBankingPage
 main = MainPage()
 feedback = FeedBackPage()
 service = OnlineBankingPage()
-password = ForgottenPasswordPage()
+forgottenPasswordPage = ForgottenPasswordPage()
 auth = Authorization()
 
 @step

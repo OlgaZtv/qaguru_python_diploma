@@ -103,17 +103,17 @@ class TestsForms:
             app.auth.click_to_sing_in()
 
         with allure.step('Click "Forgot your password" link'):
-            app.password.click_forgot_your_password_link()
+            app.forgottenPasswordPage.click_forgot_your_password_link()
 
         with allure.step('Fill password'):
-            app.password.fill_email_input(email_random)
+            app.forgottenPasswordPage.fill_email_input(email_random)
 
         with allure.step('Click submit button'):
             app.auth.click_submit()
 
         # THEN
         with allure.step('Check message'):
-            app.password.check_message(message, email_random)
+            app.forgottenPasswordPage.check_message(message, email_random)
 
     @allure.severity(Severity.NORMAL)
     @allure.title("Check Feedback form")
